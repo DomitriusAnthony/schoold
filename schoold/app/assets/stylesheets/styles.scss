@@ -1,0 +1,223 @@
+@import "bootstrap";
+@import "bootstrap-sprockets";
+
+/*--------layout styles--------------*/
+
+@font-face {
+	font-family: 'Raleway';
+	src:url("https://fonts.googleapis.com/css?family=Raleway");
+}
+
+@keyframes fadeIn {
+	0% {
+		transform: scale(0.1);
+		opacity:0;
+	}
+	60% {
+		transform: scale(1.2);
+		opacity:0.5;
+	}
+	100%{
+		opacity:1;
+		transform: scale(1);
+	}
+}
+
+@keyframes fadeInLeft {
+	0% {
+		transform: scale(0.1);
+		opacity:0;
+	}
+	10% {
+		transform: scale(1.2);
+		opacity:0.5;
+	}
+	100%{
+		opacity:1;
+		transform: scale(1);
+	}
+}
+ 
+@keyframes pulse {
+	0% {
+		transform: scale(0.1);
+		opacity:0;
+	}
+	90% {
+		transform: scale(1.2);
+		opacity:0.5;
+	}
+	100%{
+		opacity:1;
+		transform: scale(1);
+	}
+}
+
+html, body {
+	background: #304352; /* fallback for old browsers */
+	background: -webkit-linear-gradient(to left, #304352 , #d7d2cc); /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to left, #304352 , #d7d2cc); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	font-family: 'Raleway';
+}
+
+.primary_background {
+	margin: -20px;
+	padding-top: 400px;
+	background-image:url("http://hbculifestyle.com/wp-content/uploads/2013/08/How-HBCU-Students-Can-Creatively-Pay-for-College.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.secondary_background {
+	background: #485563; /* fallback for old browsers */
+	background: -webkit-linear-gradient(to left, #485563 , #29323c); /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to left, #485563 , #29323c); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */       
+}
+
+.tertiary_background {
+	background: #304352; /* fallback for old browsers */
+	background: -webkit-linear-gradient(to left, #304352 , #d7d2cc); /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to left, #304352 , #d7d2cc); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	height:100%;
+}
+
+.header_holder {
+	background-color: rgba(169, 169, 169, 0.7);
+}
+
+.header1 {
+	text-align: center;
+	animation:fadeIn 4s;
+	margin:20px;
+	color: white;
+}
+
+.header2 {
+	text-align: center;
+	margin:20px;
+	color: white;
+	opacity:0;
+}
+
+.sub-header {
+	text-align: center;
+	animation:pulse 7s;
+	margin:20px;
+	color: white;
+}
+
+.main-content {
+	text-align: center;
+	margin: 0 auto;
+	max-width: 950px;
+	padding: 10px;
+	font-size:24px;
+	color:lightgray;
+	opacity:0;
+}
+
+/*-----------image styling--------------*/
+
+/*.team_pics {
+	width:950px;
+	max-width: 100%;
+	text-align: center;
+	margin:0 auto;
+}*/
+
+#mateo {
+	background-image: url("kerala.jpg");
+	background-size: 100%;
+	background-repeat: no-repeat;
+	width:300px;
+	max-width: 27%;
+	height:300px;
+	max-height: 10%;
+	margin:20px;
+	border-radius: 14px;
+	float:left;
+}
+
+
+
+#john {
+	background-image: url("https://files.slack.com/files-tmb/T03JJLPSP-F4J8WDF55-1dbe95c733/13600024_10210214012055280_7882353716276410700_n_720.jpg");
+	background-size: 100%;
+	background-repeat: no-repeat;
+	width:300px;
+	max-width: 28%;
+	height:300px;
+	max-height: 10%;
+	margin:20px;
+	border-radius: 14px;
+	float:right;
+}
+
+#dom {
+	background-image: url("dom.jpg");
+	background-size: 100%;
+	background-repeat: no-repeat;
+	width:300px;
+	max-width: 27%;
+	height:300px;
+	max-height: 10%;
+	margin:20px;
+	border-radius: 14px;
+	float:left;
+}
+
+#dom-container {
+	float:left;
+	width:100%;
+}
+
+#mateo-container {
+	float:left;
+	width:100%;
+}
+
+#john-container {
+	float:right;
+	width:100%;
+}
+
+.bio-content {
+	text-align: center;
+	margin: 0 auto;
+	max-width: 700px;
+	padding: 25px;
+	font-size:18px;
+	color:lightgray;
+}
+
+/*------------devise styling----------------*/
+
+.login {
+	margin:0 auto;
+	text-align: center;
+}
+
+#user_email,
+#user_password {
+	width:400px;
+	border-radius: 10px;
+	border: 2px solid black;
+	padding:10px;
+}
+
+.login_button {
+	width: 100px;
+	border-radius: 10px;
+}
+
+/*--------navbar styling---------*/
+
+.navbar {
+	font-size: 24px;
+}
+
+.navbar-brand {
+	font-size: 24px;
+}
+
+
