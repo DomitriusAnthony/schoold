@@ -18,6 +18,15 @@
   opacity: 1;  }
 }
 
+@keyframes something_else {
+	from {
+		opacity:1;
+	}
+	to {
+		opacity:0;
+	}
+}
+
 html, body {
 	background: #304352; /* fallback for old browsers */
 	background: -webkit-linear-gradient(to left, #304352 , #d7d2cc); /* Chrome 10-25, Safari 5.1-6 */
