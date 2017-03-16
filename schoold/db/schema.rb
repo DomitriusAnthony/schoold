@@ -10,11 +10,20 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170315210327) do
+ActiveRecord::Schema.define(version: 20170316210750) do
 
-  create_table "games", force: :cascade do |t|
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+  create_table "challenges", force: :cascade do |t|
+    t.integer  "user_id"
+    t.string   "profile_pic"
+    t.string   "heading_tag"
+    t.string   "p_tag"
+    t.string   "image_one"
+    t.string   "image_two"
+    t.string   "image_three"
+    t.string   "audio_tag"
+    t.string   "video_tag"
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
   end
 
   create_table "users", force: :cascade do |t|
