@@ -1,8 +1,3 @@
-// Place all the styles related to the games controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
-
-
 body {
 	background-image:url("https://i.ytimg.com/vi/lt0WQ8JzLz4/maxresdefault.jpg");
 	background-size: cover;
@@ -138,6 +133,6 @@ body {
 
 }
 
-.audi{
+.audio{
 	text-align:center;
 }
