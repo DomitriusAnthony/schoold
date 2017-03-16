@@ -5,6 +5,4 @@ root to: "home#index"
 
 get "profile" => "home#profile", as: "profile"
 
-get "show" => "games#show", as: "show"
-
 end

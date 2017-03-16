@@ -189,12 +189,25 @@ html, body {
 	padding-top:160px;
 }
 
+.sign_up {
+	margin:0 auto;
+	text-align: center;
+	padding-top:160px;
+}
+
 #user_email,
-#user_password {
+#user_password,
+#user_password_confirmation {
 	width:400px;
 	border-radius: 10px;
 	border: 2px solid black;
 	padding:10px;
+}
+
+#user_avatar {
+	margin:0 auto;
+	text-align: center;
+	border-radius: 12px;
 }
 
 .login_button {
