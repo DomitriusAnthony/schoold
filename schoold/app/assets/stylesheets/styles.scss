@@ -34,9 +34,9 @@
 
 
 html, body {
-	background: #304352; /* fallback for old browsers */
-	background: -webkit-linear-gradient(to left, #304352 , #d7d2cc); /* Chrome 10-25, Safari 5.1-6 */
-	background: linear-gradient(to left, #304352 , #d7d2cc); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	background: #304352;
+	background: -webkit-linear-gradient(to left, #304352 , #d7d2cc);
+	background: linear-gradient(to left, #304352 , #d7d2cc);
 	font-family: 'Kayak Sans Regular';
 }
 
@@ -186,14 +186,28 @@ html, body {
 .login {
 	margin:0 auto;
 	text-align: center;
+	padding-top:160px;
+}
+
+.sign_up {
+	margin:0 auto;
+	text-align: center;
+	padding-top:160px;
 }
 
 #user_email,
-#user_password {
+#user_password,
+#user_password_confirmation {
 	width:400px;
 	border-radius: 10px;
 	border: 2px solid black;
 	padding:10px;
+}
+
+#user_avatar {
+	margin:0 auto;
+	text-align: center;
+	border-radius: 12px;
 }
 
 .login_button {
