@@ -1,12 +1,15 @@
 @import "bootstrap";
 @import "bootstrap-sprockets";
 
-/*--------layout styles--------------*/
+/*---------font declarations------*/
 
-@font-face {
-	font-family: 'Raleway';
-	src:url("https://fonts.googleapis.com/css?family=Raleway");
+@font-face{
+    font-family: 'Kayak Sans Regular';
+    src: font-url("KayakSansRegular.otf");
 }
+
+/*---------animation declarations-------*/
+
 
 @keyframes something {
  from {
@@ -27,11 +30,14 @@
 	}
 }
 
+/*--------layout styles--------------*/
+
+
 html, body {
 	background: #304352; /* fallback for old browsers */
 	background: -webkit-linear-gradient(to left, #304352 , #d7d2cc); /* Chrome 10-25, Safari 5.1-6 */
 	background: linear-gradient(to left, #304352 , #d7d2cc); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-	font-family: 'Raleway';
+	font-family: 'Kayak Sans Regular';
 }
 
 .primary_background {
@@ -58,6 +64,8 @@ html, body {
 .header_holder {
 	background-color: rgba(169, 169, 169, 0.7);
 }
+
+/*-----content styling------*/
 
 .header1 {
 	text-align: center;
@@ -99,14 +107,7 @@ html, body {
 	opacity:0;
 }
 
-/*-----------image styling--------------*/
-
-/*.team_pics {
-	width:950px;
-	max-width: 100%;
-	text-align: center;
-	margin:0 auto;
-}*/
+/*-----------team bio styling--------------*/
 
 #mateo {
 	background-image: url("kerala.jpg");
@@ -121,6 +122,10 @@ html, body {
 	float:left;
 }
 
+#mateo-name {
+	font-size: 25px;
+	color:firebrick;
+}
 
 
 #john {
@@ -172,7 +177,7 @@ html, body {
 	margin: 0 auto;
 	max-width: 700px;
 	padding: 25px;
-	font-size:18px;
+	font-size:20px;
 	color:lightgray;
 }
 
