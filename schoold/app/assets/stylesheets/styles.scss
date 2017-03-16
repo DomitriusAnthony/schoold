@@ -1,63 +1,43 @@
 @import "bootstrap";
 @import "bootstrap-sprockets";
 
+/*---------font declarations------*/
+
+@font-face{
+    font-family: 'Kayak Sans Regular';
+    src: font-url("KayakSansRegular.otf");
+}
+
+/*---------animation declarations-------*/
+
+
+@keyframes something {
+ from {
+  opacity:0;
+  color:lightgray;
+ }
+ 
+ to {
+  opacity: 1;  }
+}
+
+@keyframes something_else {
+	from {
+		opacity:1;
+	}
+	to {
+		opacity:0;
+	}
+}
+
 /*--------layout styles--------------*/
 
-@font-face {
-	font-family: 'Raleway';
-	src:url("https://fonts.googleapis.com/css?family=Raleway");
-}
-
-@keyframes fadeIn {
-	0% {
-		transform: scale(0.1);
-		opacity:0;
-	}
-	60% {
-		transform: scale(1.2);
-		opacity:0.5;
-	}
-	100%{
-		opacity:1;
-		transform: scale(1);
-	}
-}
-
-@keyframes fadeInLeft {
-	0% {
-		transform: scale(0.1);
-		opacity:0;
-	}
-	10% {
-		transform: scale(1.2);
-		opacity:0.5;
-	}
-	100%{
-		opacity:1;
-		transform: scale(1);
-	}
-}
- 
-@keyframes pulse {
-	0% {
-		transform: scale(0.1);
-		opacity:0;
-	}
-	90% {
-		transform: scale(1.2);
-		opacity:0.5;
-	}
-	100%{
-		opacity:1;
-		transform: scale(1);
-	}
-}
 
 html, body {
 	background: #304352; /* fallback for old browsers */
 	background: -webkit-linear-gradient(to left, #304352 , #d7d2cc); /* Chrome 10-25, Safari 5.1-6 */
 	background: linear-gradient(to left, #304352 , #d7d2cc); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-	font-family: 'Raleway';
+	font-family: 'Kayak Sans Regular';
 }
 
 .primary_background {
@@ -85,14 +65,24 @@ html, body {
 	background-color: rgba(169, 169, 169, 0.7);
 }
 
+/*-----content styling------*/
+
 .header1 {
 	text-align: center;
 	animation:fadeIn 4s;
 	margin:20px;
 	color: white;
+	opacity:0;
 }
 
 .header2 {
+	text-align: center;
+	margin:20px;
+	color: white;
+	opacity:0;
+}
+
+.header3 {
 	text-align: center;
 	margin:20px;
 	color: white;
@@ -104,6 +94,7 @@ html, body {
 	animation:pulse 7s;
 	margin:20px;
 	color: white;
+	opacity:0;
 }
 
 .main-content {
@@ -116,14 +107,7 @@ html, body {
 	opacity:0;
 }
 
-/*-----------image styling--------------*/
-
-/*.team_pics {
-	width:950px;
-	max-width: 100%;
-	text-align: center;
-	margin:0 auto;
-}*/
+/*-----------team bio styling--------------*/
 
 #mateo {
 	background-image: url("kerala.jpg");
@@ -138,10 +122,14 @@ html, body {
 	float:left;
 }
 
+#mateo-name {
+	font-size: 25px;
+	color:firebrick;
+}
 
 
 #john {
-	background-image: url("https://files.slack.com/files-tmb/T03JJLPSP-F4J8WDF55-1dbe95c733/13600024_10210214012055280_7882353716276410700_n_720.jpg");
+	background-image: url("john.jpg");
 	background-size: 100%;
 	background-repeat: no-repeat;
 	width:300px;
@@ -169,16 +157,19 @@ html, body {
 #dom-container {
 	float:left;
 	width:100%;
+	opacity:0;
 }
 
 #mateo-container {
 	float:left;
 	width:100%;
+	opacity:0;
 }
 
 #john-container {
 	float:right;
 	width:100%;
+	opacity:0;
 }
 
 .bio-content {
@@ -186,7 +177,7 @@ html, body {
 	margin: 0 auto;
 	max-width: 700px;
 	padding: 25px;
-	font-size:18px;
+	font-size:20px;
 	color:lightgray;
 }
 

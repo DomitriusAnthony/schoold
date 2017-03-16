@@ -5,4 +5,6 @@ root to: "home#index"
 
 get "about" => "home#about", as: "about"
 
+get "show" => "games#show", as: "show"
+
 end
