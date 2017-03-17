@@ -10,7 +10,21 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170310222232) do
+
+ActiveRecord::Schema.define(version: 20170316210750) do
+
+  create_table "challenges", force: :cascade do |t|
+    t.integer  "user_id"
+    t.string   "profile_pic"
+    t.string   "heading_tag"
+    t.string   "p_tag"
+    t.string   "image_one"
+    t.string   "image_two"
+    t.string   "image_three"
+    t.string   "audio_tag"
+    t.string   "video_tag"
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
 
   create_table "users", force: :cascade do |t|
     t.string   "email",                  default: "", null: false
@@ -31,6 +45,6 @@ ActiveRecord::Schema.define(version: 20170310222232) do
     t.datetime "avatar_updated_at"
     t.index ["email"], name: "index_users_on_email", unique: true
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
-  end
+  
 
 end
