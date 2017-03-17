@@ -1,0 +1,37 @@
+<div class="row">
+
+  <div class="col-xs-6 bootdiv">.col-xs-6 <!-- Mock Profile -->
+  	<p class = "user_pic"><%= image_tag @user.avatar.url(:medium) %></p>
+
+  	<h1 class = "mock_name">MegaMan</h1>
+  	<div class = "badge"></div>
+  </div>
+
+  <div class="col-xs-6">.col-xs-6 <!-- Challenge Links -->
+
+  	<h1 class = "challenge_header">The Design Portal</h1>
+<hr>
+
+  	<div class = "top_row">
+  		<%= link_to root_path do %>
+		  	<div class = "game_pic"></div>
+	  	<% end %>
+
+	  	<%= link_to root_path do %>
+		  	<div class = "game_pic2"></div>
+	  	<% end %>
+  	</div>
+
+  	<div class = "bottom_row">
+  		<%= link_to root_path do %>
+		  	<div class = "game_pic3"></div>
+	  	<% end %>
+
+	  	<%= link_to root_path do %>
+		  	<div class = "game_pic4"></div>
+  		<% end %>
+  	</div>
+
+  </div>
+
+</div>
