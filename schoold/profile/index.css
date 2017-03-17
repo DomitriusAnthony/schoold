@@ -1,12 +1,7 @@
-// Place all the styles related to the home controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
-
-.body{
-	background-image:url("space2.jpg");
+body {
+	background-image:url("https://i.ytimg.com/vi/lt0WQ8JzLz4/maxresdefault.jpg");
 	background-size: cover;
 	background-repeat: no-repeat;
-	
 }
 
 /*-------------------About Me--------------*/
@@ -26,58 +21,35 @@
 }
 
 
-.about-me{
+.subtitle{
 	margin: 5px;
 	font-size: 18px;
 	border: 2px solid black;
 	background-color: white;
-	width: 100px;
-	border: 2px solid black;
+	width: 50%;
+	display: inline;
 }
 
 
 .about{
 	border: 2px solid black;
 	background-color: white;
-	width: 80%;
+	width: 50%;
+	display: inline-block;
 }
 
 .movies{
-	margin: 5px;
-	font-size: 18px;
 	border: 2px solid black;
 	background-color: white;
-	border: 2px solid black;
-	width: 100px;
-}
-
-.fav-movies{
-	border: 2px solid black;
-	background-color: white;
-	width: 80%;
-	border: 2px solid black;
+	width: 50%;
+	display: inline-block;
 
 }
-.fav-music{
-	border: 2px solid black;
-	background-color: white;
-	width: 80%;
-	text-align: center;
-}
-
 .music{
-	margin: 5px;
-	font-size: 18px;
 	border: 2px solid black;
 	background-color: white;
-	width:100px;
-}
-
-.music_container {
-	width:760px;
-	max-width:80%;
-	margin:0 auto;
-	text-align: center;
+	width: 50%;
+	display: inline-block;
 }
 
 .photo-gallery{
@@ -163,9 +135,4 @@
 
 .audio{
 	text-align:center;
-
-}
-
-.video{
-	text-align: center;
 }
