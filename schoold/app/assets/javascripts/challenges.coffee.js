@@ -114,9 +114,6 @@ $("document").ready(function() {
     $(".main_content").css("font-family", answer)
   })
 
-
-
-
 }) // End of Document.Ready
 
 
