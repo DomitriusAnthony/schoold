@@ -29,23 +29,21 @@
 		<%= form_for :profile_pic do |f| %>
 			<%= f.text_field  :profile_pic, id: "answer" %>
 			<button type="button">Submit Code!</button>
-			<a href="/challenge_two"><%= f.submit "Next Challenge!" %></a>
+			<%= f.submit "Next Challenge!" %>
+			<a href="/challenge_two">Next Challenge</a>
 		<% end %>
 
 
 	</div>
 
-	<hr style="width: 1px; height: 100%">
+
 
 	<div class="col-md-6">
-	<div class="profile_picture">
+	<div class="custom_background">
 		
-		<br>
-		<br>
-		<br>
-		<br>
+	
 
-		<div class="pro-pic">
+	
 			<img class="profile-picture" src="mega_man.jpg">
 		</div>
 	</div>
