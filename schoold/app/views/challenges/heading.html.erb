@@ -2,6 +2,15 @@
 <div class="row">
 
 	<div class="col-md-6">
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
 
 		<div class="challenge">
 		<p class="challenge-description">
@@ -9,11 +18,20 @@
 
 
 		
-		<a class="links" href="google.com">Words that link to a site</a>
-		<a class="links" href="google.com">Words that link to a site</a>
+		<a class="links" href="https://www.w3schools.com/tags/tag_hn.asp">W3schools definition and usage for H1-H6 tags</a>
+		
 
-		<p class="picture-input">"< h1 >"</p><input type="text" name="heading_tag" id="answer2" /><p>"< / h1 >"</p>	
+		<!-- <p class="picture-input">"< h1 >"</p><input type="text" name="heading_tag" id="answer2" /><p>"< / h1 >"</p>	
 		<button type="button">Submit code!</button>
+ -->
+
+
+		<%= form_for :heading_tag do |f| %>
+			<%= f.text_field  :heading_tag, id: "answer2" %>
+			<button type="button">Submit Code!</button>
+			<%= f.submit "Next Challenge!" %>
+		<% end %>
+
 
 		</div>
 
@@ -21,7 +39,13 @@
 	</div>
 
 	<div class="col-md-6">
-
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
 		<img class="profile-picture" src="">
 		<h1 class="heading_tag"></h1>
 

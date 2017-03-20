@@ -3,6 +3,18 @@
 
 	<div class="col-md-6">
 
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
 		<p class="challenge-description">This challenge will start off with adding a profile picture to your profile page. A profile picture is as simple as using an <img> tag inside of the body of your HTML. The image tag will take a source, and that source will be translated into whatever picture you choose! You can use any picture from your computer, but for the puurpose of this excercise we will be using an image from the internet. Use any image from the internet as your profile picture. Google your image and copy the URL of the image fhe address bar.</p>
 
 		<a class="links" href="google.com">Words that link to a site</a>
@@ -11,11 +23,19 @@
 
 		
 		
-		<p class="picture-input">"< img >"</p><input type="text" name="profile_pic" id="answer" /><p>"< / img >"</p>	
-		<button type="button">Submit code!</button>
+	<!-- 	<p class="picture-input">"< img >"</p><input type="text" name="profile_pic" id="answer" /><p>"< / img >"</p>	
+		<button type="button">Submit code!</button> -->
+
+		<%= form_for :profile_pic do |f| %>
+			<%= f.text_field  :profile_pic, id: "answer" %>
+			<button type="button">Submit Code!</button>
+			<%= f.submit "Next Challenge!" %>
+		<% end %>
 
 
 	</div>
+
+	<hr style="width: 1px; height: 100%">
 
 	<div class="col-md-6">
 

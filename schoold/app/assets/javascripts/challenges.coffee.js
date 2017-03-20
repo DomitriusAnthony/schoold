@@ -15,51 +15,51 @@ $("document").ready(function() {
 	    answer = $("#answer2").val()
 	    console.log(answer)
     
-	$(".heading-tag")[0].html = "<h1>" answer "</h1>"
+	$(".heading_tag").text(answer)
   	})
 
 	// Challenge 3 
   	$("button").click(function() {
 
-	    answer = $("#answer").val()
+	    answer = $("#answer3").val()
 	    console.log(answer)
     
-	$(".profile-picture")[0].src = answer
-  	})
+	$(".about").text(answer)
+	})
 
   	// Challenge 4
   	$("button").click(function() {
 
-	    answer = $("#answer").val()
+	    answer = $("#answer4").val()
 	    console.log(answer)
     
-	$(".profile-picture")[0].src = answer
+	$(".photo-1").src = answer
   	})
 
   	// Challenge 5
   	$("button").click(function() {
 
-	    answer = $("#answer").val()
+	    answer = $("#answer5").val()
 	    console.log(answer)
     
-	$(".profile-picture")[0].src = answer
+	$(".photo-2").src = answer
   	})
 
   	// Challenge 5
   	$("button").click(function() {
 
-	    answer = $("#answer").val()
+	    answer = $("#answer6").val()
 	    console.log(answer)
     
-	$(".profile-picture")[0].src = answer
+	$(".photo-2").src = answer
   	})
 
   	// Challenge 5
   	$("button").click(function() {
 
-	    answer = $("#answer").val()
+	    answer = $("#answer7").val()
 	    console.log(answer)
     
-	$(".profile-picture")[0].src = answer
+	$(".video").src = answer
   	})
 })

@@ -1,10 +1,15 @@
 class ChallengesController < ApplicationController
 	def show
-		@challenge = Challenge.all
+		challenges = Challenge.all
+		@user = User.find(:id)
 	 end
 
 	 def update_profile
 	 	@challenge = challenge.update(profile_pic: params[:profile_pic])
+
+	 	 if @challenge.update
+	 	 	format.html { redirect_to "/challenge_two" }
+	 	 end
 	 end
 
 	 def update_heading
