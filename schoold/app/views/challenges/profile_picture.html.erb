@@ -26,7 +26,7 @@
 	<!-- 	<p class="picture-input">"< img >"</p><input type="text" name="profile_pic" id="answer" /><p>"< / img >"</p>	
 		<button type="button">Submit code!</button> -->
 
-		<%= form_for @challenge do |f| %>
+		<%= form_for :profile_pic do |f| %>
 			<%= f.text_field  :profile_pic, id: "answer" %>
 			<button type="button">Submit Code!</button>
 			<%= f.submit "Next Challenge!" %>
@@ -38,10 +38,11 @@
 	<hr style="width: 1px; height: 100%">
 
 	<div class="col-md-6">
-
+	<div class="profile_picture">
 		<div class="pro-pic">
 			<img class="profile-picture" src="">
 		</div>
+	</div>
 
 	</div>
 
