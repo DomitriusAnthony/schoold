@@ -24,7 +24,7 @@ $("document").ready(function() {
 	    answer = $("#answer3").val()
 	    console.log(answer)
     
-	$(".about").text(answer)
+	$("#about").text(answer)
 	})
 
   	// Challenge 4

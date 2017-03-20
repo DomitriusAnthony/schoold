@@ -25,7 +25,9 @@
 		
 
 		<%= form_for :p_tag do |f| %>
-			<%= f.text_field  :p_tag, id: "answer3" %>
+			<p> < p >
+			<%= f.text_area :p_tag, id: "answer3" %>
+			< /p >									</p>
 			<button type="button">Submit Code!</button>
 			<%= f.submit "Next Challenge!" %>
 		<% end %>
@@ -36,12 +38,22 @@
 	</div>
 
 	<div class="col-md-6">
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
 
-		<img class="profile-picture" src="">
-		<h1 class="name"></h1>
+		<div class="profile_picture">
+			<img class="profile-picture" src="">
+			</div>
+			<h1 class="heading_tag">Domitrius Clark</h1>
 
+			
+			<p id="about"></p>
 
-		<p id="about"><%= @user.challenges.p_tag %></p>
-
+			</div>
 
 	</div>

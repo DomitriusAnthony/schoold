@@ -1,6 +1,6 @@
 class ChallengesController < ApplicationController
 	def profile_picture
-		@challenge = Challenge.new(challenge_params)
+		@challenge = Challenge.new
 		@user = User.find(current_user)
 	 end
 
@@ -40,9 +40,9 @@ class ChallengesController < ApplicationController
 	 	@challenge = challenge.update(video_tag: params[:video_tag])
 	 end
 
-	 private 
+	 # private 
 	 
-	 def challenge_params
-	 	params.require(:challenge).permit(:profile_pic, :heading_tag, :p_tag, :image_one, :image_two, :image_three, :video_tag)
-	 end
+	 # def challenge_params
+	 # 	params.require(:challenge).permit(:profile_pic, :heading_tag, :p_tag, :image_one, :image_two, :image_three, :video_tag)
+	 # end
 end
