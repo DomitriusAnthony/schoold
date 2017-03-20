@@ -63,12 +63,6 @@
 	padding:20px;
 }
 
-
-.bootdiv {
-	border-right:1px solid white;
-	height:100%;
-}
-
 /*--------challenge content-------*/
 
 .challenge_header {
@@ -99,15 +93,13 @@ input {
 	margin:10px;
 }
 
-/*---------challenge images-----------*/
-
-.profile_picture {
-	width:300px;
-	height:300px;
-	background-image: url("mega_man.jpg");
-	background-size:cover;
-	background-repeat: no-repeat;
+.challenge-4 {
+	margin: 10px;
+	padding:50px;
+	text-align: center;
 }
+
+/*---------challenge images-----------*/
 
 .col-md-6 {
 	margin-top: 50px;
