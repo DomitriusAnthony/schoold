@@ -1,70 +1,70 @@
 $("document").ready(function() {
 
-	// // Challenge one
-	// $("button").click(function() {
+	// Challenge one
+	$("button").click(function() {
 
-	//     answer = $("#answer").val()
-	//     console.log(answer)
+	    answer = $("#answer").val()
+	    console.log(answer)
     
-	// $(".profile-picture")[0].src = answer
- //  	})
+	$(".profile-picture")[0].src = answer
+  	})
 
-	// // Challenge 2
-	// $("button").click(function() {
+	// Challenge 2
+	$("button").click(function() {
 
-	//     answer = $("#answer2").val()
-	//     console.log(answer)
+	    answer = $("#answer2").val()
+	    console.log(answer)
     
-	// $(".heading-tag")[0].html = "<h1> answer </h1>"
- //  	})
+	$(".heading_tag").text(answer)
+  	})
 
-	// // Challenge 3 
- //  	$("button").click(function() {
+	// Challenge 3 
+  	$("button").click(function() {
 
-	//     answer = $("#answer").val()
-	//     console.log(answer)
+	    answer = $("#answer3").val()
+	    console.log(answer)
     
-	// $(".profile-picture")[0].src = answer
- //  	})
+	$(".about").text(answer)
+	})
 
- //  	// Challenge 4
- //  	$("button").click(function() {
+  	// Challenge 4
+  	$("button").click(function() {
 
-	//     answer = $("#answer").val()
-	//     console.log(answer)
+	    answer = $("#answer4").val()
+	    console.log(answer)
     
-	// $(".profile-picture")[0].src = answer
- //  	})
+	$(".photo-1").src = answer
+  	})
 
- //  	// Challenge 5
- //  	$("button").click(function() {
+  	// Challenge 5
+  	$("button").click(function() {
 
-	//     answer = $("#answer").val()
-	//     console.log(answer)
+	    answer = $("#answer5").val()
+	    console.log(answer)
     
-	// $(".profile-picture")[0].src = answer
- //  	})
+	$(".photo-2").src = answer
+  	})
 
- //  	// Challenge 5
- //  	$("button").click(function() {
+  	// Challenge 5
+  	$("button").click(function() {
 
-	//     answer = $("#answer").val()
-	//     console.log(answer)
+	    answer = $("#answer6").val()
+	    console.log(answer)
     
-	// $(".profile-picture")[0].src = answer
- //  	})
+	$(".photo-2").src = answer
+  	})
 
- //  	// Challenge 5
- //  	$("button").click(function() {
+  	// Challenge 5
+  	$("button").click(function() {
 
-	//     answer = $("#answer").val()
-	//     console.log(answer)
+	    answer = $("#answer7").val()
+	    console.log(answer)
     
-	// $(".profile-picture")[0].src = answer
- //  	})
-
+	$(".video").src = answer
+  	})
 
 // ----------CSS Challenges---------
+
 // ----------Challenge One----------
 	$(".code_generator").click(function() {
 	    answer = $("#answer").val()
@@ -96,12 +96,4 @@ $("document").ready(function() {
 	    $(".main_content").css("text-align", answer)
 	  })
 
-
-
-
-
-}) // End of Document.Ready
-
-
-
-
+}) // end of Document.ready

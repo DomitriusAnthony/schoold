@@ -2,22 +2,42 @@
 
 	<div class="col-md-6">
 
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
 		<div class="challenge">
 		<p class="challenge-description">Lastly, let's add a cool video in to your page from youtube! Head on over to youtube and choose your video. When on the video page, click share and choose the embed link. Copy over the embed link to the text box and submit it! Inside your embed link, there are parameters that you can change to affect the height, width, and even if the video will autoplay or not! Definitely get into doing some edits on a seperate editor to see how the changes effect the video display! 
 		</p>
 
 
 		
-		<a class="links" href="google.com">Words that link to a site</a>
-		<a class="links" href="google.com">Words that link to a site</a>
+		<a class="links" href="https://www.w3schools.com/tags/tag_iframe.asp">W3schools describes how to properly use iframe!</a>
+		
 
 		<p class="picture-input">"Place your Youtube embed here:"</p><input type="text_area" name="video_tag" id="answer7" />
 		<button type="button">Submit code!</button>
+
+		<%= form_for :video_tag do |f| %>
+			<p>Place your Youtube embed here!</p>		
+			<%= f.text_field  :video_tag, id: "answer7" %>
+			<button type="button">Submit Code!</button>
+			<%= f.submit "Next Challenge!" %>
+		<% end %>
 
 		</div>
 
 
 	</div>
+
+	<hr style="width: 1px; height: 100%">
 
 	<div class="col-md-6">
 
@@ -33,7 +53,7 @@
 		<img src="photo-3">
 
 
-		<iframe src=""></iframe>
+		<iframe class="video" src=""></iframe>
 	</div>
 
 
