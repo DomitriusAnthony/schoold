@@ -1,7 +1,7 @@
 class ChallengesController < ApplicationController
-	def show
-		challenges = Challenge.all
-		@user = User.find(:id)
+	def profile_picture
+		@challenge = Challenge.new(challenge_params)
+		@user = User.find(current_user)
 	 end
 
 	 def update_profile
@@ -38,5 +38,11 @@ class ChallengesController < ApplicationController
 
 	 def update_video_tag 
 	 	@challenge = challenge.update(video_tag: params[:video_tag])
+	 end
+
+	 private 
+	 
+	 def challenge_params
+	 	params.require(:challenge).permit(:profile_pic, :heading_tag, :p_tag, :image_one, :image_two, :image_three, :video_tag)
 	 end
 end
