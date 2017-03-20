@@ -22,12 +22,12 @@
 		<a class="links" href="https://www.w3schools.com/tags/tag_iframe.asp">W3schools describes how to properly use iframe!</a>
 		
 
-		<p class="picture-input">"Place your Youtube embed here:"</p><input type="text_area" name="video_tag" id="answer7" />
-		<button type="button">Submit code!</button>
+	<!-- 	<p class="picture-input">"Place your Youtube embed here:"</p><input type="text_area" name="video_tag" id="answer7" />
+		<button type="button">Submit code!</button> -->
 
 		<%= form_for :video_tag do |f| %>
 			<p>Place your Youtube embed here!</p>		
-			<%= f.text_field  :video_tag, id: "answer7" %>
+			<%= f.text_area  :video_tag, id: "answer7" %>
 			<button type="button">Submit Code!</button>
 			<%= f.submit "Next Challenge!" %>
 		<% end %>
@@ -53,7 +53,7 @@
 		<img src="photo-3">
 
 
-		<iframe class="video" src=""></iframe>
+		<iframe width="560" height="315" class="video" src=""></iframe>
 	</div>
 
 

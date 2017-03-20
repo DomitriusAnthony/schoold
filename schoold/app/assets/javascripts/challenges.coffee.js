@@ -33,7 +33,7 @@ $("document").ready(function() {
 	    answer = $("#answer4").val()
 	    console.log(answer)
     
-	$(".photo-1").src = answer
+	$(".photo-1")[0].src = answer
   	})
 
   	// Challenge 5
@@ -42,7 +42,7 @@ $("document").ready(function() {
 	    answer = $("#answer5").val()
 	    console.log(answer)
     
-	$(".photo-2").src = answer
+	$(".photo-2")[0].src = answer
   	})
 
   	// Challenge 5
@@ -51,7 +51,7 @@ $("document").ready(function() {
 	    answer = $("#answer6").val()
 	    console.log(answer)
     
-	$(".photo-2").src = answer
+	$(".photo-3")[0].src = answer
   	})
 
   	// Challenge 5
@@ -60,6 +60,6 @@ $("document").ready(function() {
 	    answer = $("#answer7").val()
 	    console.log(answer)
     
-	$(".video").src = answer
+	$(".video")[0].src = answer
   	})
 })
