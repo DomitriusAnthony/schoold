@@ -24,7 +24,7 @@ $("document").ready(function() {
 	    answer = $("#answer3").val()
 	    console.log(answer)
     
-	$(".about").text(answer)
+	$("#about").text(answer)
 	})
 
   	// Challenge 4
@@ -79,21 +79,39 @@ $("document").ready(function() {
 	    $(".custom_background").css("background-color", answer)
 	  })
 
-	// -----Challenge Three----------
+// ---------Challenge Three----------
+	$(".code_generator").click(function() {
+    answer = $("#answer_1").val()
+    console.log(answer)
+    $(".main_content").css("margin", answer)
+  })
 		$(".code_generator").click(function() {
-	    answer = $("#answer_1").val()
-	    console.log(answer)
-	    $(".main_content").css("margin", answer)
-	  })
-			$(".code_generator").click(function() {
-	    answer = $("#answer_2").val()
-	    console.log(answer)
-	    $(".main_content").css("padding", answer)
-	  })
-			$(".code_generator").click(function() {
-	    answer = $("#answer_3").val()
-	    console.log(answer)
-	    $(".main_content").css("text-align", answer)
-	  })
+    answer = $("#answer_2").val()
+    console.log(answer)
+    $(".main_content").css("padding", answer)
+  })
+		$(".code_generator").click(function() {
+    answer = $("#answer_3").val()
+    console.log(answer)
+    $(".main_content").css("text-align", answer)
+  })
 
-}) // end of Document.ready
+// ---------Challenge Four -------------
+
+	$(".code_generator").click(function() {
+    answer = $("#typography_1").val()
+    console.log(answer)
+    $(".main_content").css("font-size", answer)
+  })
+		$(".code_generator").click(function() {
+    answer = $("#typography_2").val()
+    console.log(answer)
+    $(".main_content").css("color", answer)
+  })
+		$(".code_generator").click(function() {
+    answer = $("#typography_3").val()
+    console.log(answer)
+    $(".main_content").css("font-family", answer)
+  })
+
+}) // End of Document.Ready
