@@ -3,35 +3,35 @@
   <div class="col-xs-6 bootdiv">.col-xs-6 <!-- Mock Profile -->
   	<p class = "user_pic"><%= image_tag @user.avatar.url(:medium) %></p>
 
-  	<h1 class = "mock_name">MegaMan</h1>
+  	<h1 class = "mock_name"></h1>
   	<div class = "badge"></div>
   </div>
 
   <div class="col-xs-6">.col-xs-6 <!-- Challenge Links -->
-
-  	<h1 class = "challenge_header">The Design Portal</h1>
-<hr>
+    <div class = "custom_background">
+    	<h1 class = "challenge_header">The Design Portal</h1>
+  <hr>
 
   	<div class = "top_row">
   		<%= link_to root_path do %>
-		  	<img class = "game_pic" src = "HTML.jpg">
-	  	<% end %>
+      <%= image_tag "HTML.jpg", class: "game_pic" %>
+  	  	<% end %>
 
 	  	<%= link_to root_path do %>
-		  	<div class = "game_pic2" src = "CSS.jpg">
-	  	<% end %>
-  	</div>
+      <%= image_tag "CSS.jpg", class: "game_pic2" %>
+  	  	<% end %>
+    	</div>
 
   	<div class = "bottom_row">
   		<%= link_to root_path do %>
-		  	<div class = "game_pic3" src = "javascript.jpg">
-	  	<% end %>
+      <%= image_tag "javascript.jpg", class: "game_pic3" %>
+  	  	<% end %>
 
 	  	<%= link_to root_path do %>
-		  	<div class = "game_pic4" src = "app_dev.jpg">
-  		<% end %>
-  	</div>
+      <%= image_tag "app_dev.jpg", class: "game_pic4" %>
+    		<% end %>
+    	</div>
 
-  </div>
-
+    </div>
+    </div>
 </div>
