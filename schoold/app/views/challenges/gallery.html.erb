@@ -2,21 +2,49 @@
 
 	<div class="col-md-6">
 
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
 		<div class="challenge">
 		<p class="challenge-description">Remember that image tag? Well let's revisit that real quick. This time we're going to be using three images to create a mini gallery of pictures. Go and grab some pictures of your favorite sport, videogame, or whatever you like! (remember you can google your image and copy the URL right into the form!)</p>
 
 
 		
-		<a class="links" href="google.com">Words that link to a site</a>
-		<a class="links" href="google.com">Words that link to a site</a>
+		<a class="links" href="https://www.w3schools.com/tags/tag_img.asp">W3schools definition and usage of < img > tags</a>
+		
 
-		<p class="picture-input">"< img >"</p><input type="text" name="image_one" id="answer4" /><p>"< / img >"</p>	
+<!-- 		<p class="picture-input">"< img >"</p><input type="text" name="image_one" id="answer4" /><p>"< / img >"</p>	
 		<p class="picture-input">"< img >"</p><input type="text" name="image_two" id="answer5" /><p>"< / img >"</p>	
 		<p class="picture-input">"< img >"</p><input type="text" name="image_three" id="answer6" /><p>"< / img >"</p>	
 		<button type="button">Submit code!</button>
-		<button type="submit">To the next challenge!</button>
+		<button type="submit">To the next challenge!</button> -->
 
 		</div>
+
+		<%= form_for :image_one do |f| %>
+			<%= f.text_field  :image_one, id: "answer4" %>
+			<button type="button">Submit Code!</button>
+		<% end %>
+
+
+		<%= form_for :image_two do |f| %>
+			<%= f.text_field  :imaage_twp, id: "answer4" %>
+			<button type="button">Submit Code!</button>
+		<% end %>
+
+
+		<%= form_for :image_three do |f| %>
+			<%= f.text_field  :image_three, id: "answer4" %>
+			<button type="button">Submit Code!</button>
+			<%= f.submit "Next Challenge!" %>
+		<% end %>
 
 
 	</div>

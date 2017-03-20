@@ -1,18 +1,34 @@
 <div class="row">
 
 	<div class="col-md-6">
-
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
 		<div class="challenge">
 		<p class="challenge-description">We've now got ourselves a profile picture and your name. Almost enough to really make it your own. Now we're going to use the paragraph, or "p" tag to enter in an about me. You can type any amount inside the text field because a "p" tag can hold a huge amount of text!
 		</p>
 
 
 		
-		<a class="links" href="google.com">Words that link to a site</a>
-		<a class="links" href="google.com">Words that link to a site</a>
+		<a class="links" href="https://www.w3schools.com/tags/tag_p.asp">W3chools definition of a "p" tag</a>
+	
 
-		<p class="picture-input">"< p >"</p><input type="text" name="p_tag" id="answer" /><p>"< / p >"</p>	
+	<!-- 	<p class="picture-input">"< p >"</p><input type="text" name="p_tag" id="answer3" /><p>"< / p >"</p>	
 		<button type="button">Submit code!</button>
+		<button type="submit" ></button> -->
+		
+
+		<%= form_for :p_tag do |f| %>
+			<%= f.text_field  :p_tag, id: "answer3" %>
+			<button type="button">Submit Code!</button>
+			<%= f.submit "Next Challenge!" %>
+		<% end %>
 
 		</div>
 
@@ -25,7 +41,7 @@
 		<h1 class="name"></h1>
 
 
-		<p class="about-me"></p>
+		<p id="about"><%= @user.challenges.p_tag %></p>
 
 
 	</div>
